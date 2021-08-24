@@ -20,7 +20,8 @@ export const add = (a: BigNumber, b: BigNumber): BigNumber => {
 export const sub = (a: BigNumber, b: BigNumber): BigNumber => {
   // Fixed Point subtraction is the same as regular checked subtraction
   if (b.gt(a)) {
-    throw new Error("SUB_OVERFLOW");
+    return new BigNumber(0);
+    // throw new Error("SUB_OVERFLOW");
   }
   return a.minus(b);
 };

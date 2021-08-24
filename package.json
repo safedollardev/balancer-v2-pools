@@ -2,7 +2,8 @@
   "name": "@georgeroman/balancer-v2-pools",
   "version": "0.0.5",
   "scripts": {
-    "prepublishOnly": "tsc",
+    "build": "tsc",
+    "prepublish": "tsc",
     "test": "hardhat test"
   },
   "keywords": [
