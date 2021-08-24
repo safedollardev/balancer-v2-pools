@@ -79,7 +79,7 @@ export const _calculateInvariant = (
       return invariant;
     }
   }
-
+  return invariant;
   throw new Error("STABLE_GET_BALANCE_DIDNT_CONVERGE");
 };
 
